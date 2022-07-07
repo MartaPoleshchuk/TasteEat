@@ -1,0 +1,46 @@
+.btn {
+    border: 1px solid $color-sand;
+    color: $color-sand;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+
+    padding: 1.35rem 3.6rem;
+    text-decoration: none;
+}
+   
+
+.btn__call {
+    border: 1px solid $color-sand;
+    color:$color-white;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+
+    width: 22%;
+    padding: 1.35rem 3.6rem;
+    text-decoration: none;
+    text-align: center;
+    
+    }
+   
+   
+.btn__bcgSand {
+    border: 1px solid $color-sand;
+    color: $color-black;
+    background-color: $color-sand;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+
+    width: 22%;
+    padding: 1.35rem 3.6rem;
+    text-align: center;
+    text-decoration: none;
+    
+    
+    }

@@ -1,0 +1,59 @@
+.header {
+    width: 100%;
+    height: auto;
+    top: 0;
+    background-color: $color-black;
+
+    &__top {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+            .logo {
+                margin: 3.1rem 0;
+                // height: 150px;
+            }
+    }
+
+    &__line {
+        border-bottom: 1px solid #5C6168;
+    }
+
+    &__nav {
+
+    }
+
+    &__banner {
+        display:flex;
+        justify-content: space-between;
+        align-items:flex-end;
+
+        .leftside{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:flex-start;
+            gap:4rem;
+
+            margin-left: 5%;
+
+            &__title {
+                font-family: 'Cormorant Infant', serif;
+                font-size: 6rem;
+                color: $color-white;
+                letter-spacing: 0.2px;
+
+            }
+            &__content {
+                font-size: 1.2rem;
+                color: $color-white;
+                letter-spacing: 0.2px;
+
+            }
+        }
+        .rightside{
+
+        }
+
+    }
+}

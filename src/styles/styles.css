@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 1360px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -19,8 +19,8 @@ body {
   border: 1px solid #E1B168;
   color: #E1B168;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.4rem;
-  padding: 1.35rem 3.6rem;
+  font-size: 1.2rem;
+  padding: 1.3rem 3rem;
   text-decoration: none;
 }
 
@@ -28,11 +28,11 @@ body {
   border: 1px solid #E1B168;
   color: #FFFFFF;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.2px;
-  width: 22%;
-  padding: 1.35rem 3.6rem;
+  width: 20%;
+  padding: 1.3rem 2.8rem;
   text-decoration: none;
   text-align: center;
 }
@@ -42,11 +42,11 @@ body {
   color: #292E36;
   background-color: #E1B168;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.44px;
-  width: 22%;
-  padding: 1.35rem 3.6rem;
+  width: 20%;
+  padding: 1.3rem 2.8rem;
   text-align: center;
   text-decoration: none;
 }
@@ -71,11 +71,50 @@ body {
 }
 
 .header__top .logo {
-  margin: 3.1rem 0;
+  margin: 2.9rem 0;
+  height: 160px;
 }
 
 .header__line {
   border-bottom: 1px solid #5C6168;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav .lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4.3rem;
+  list-style-type: none;
+  margin: 1.6rem 0;
+  padding-left: 0;
+  font-size: 1.05rem;
+  letter-spacing: 0.3px;
+}
+
+.header__nav .list {
+  color: #FFFFFF;
+}
+
+.header__nav .social {
+  height: 25px;
 }
 
 .header__banner {
@@ -85,9 +124,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__banner .leftside {
@@ -104,13 +143,13 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 4rem;
-  margin-left: 5%;
+  gap: 3.5rem;
+  margin-left: 7%;
 }
 
 .header__banner .leftside__title {
   font-family: 'Cormorant Infant', serif;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #FFFFFF;
   letter-spacing: 0.2px;
 }
@@ -119,5 +158,10 @@ body {
   font-size: 1.2rem;
   color: #FFFFFF;
   letter-spacing: 0.2px;
+}
+
+.header__banner .rightside .bannerimage {
+  height: 550px;
+  padding: 0 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

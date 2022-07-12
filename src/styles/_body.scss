@@ -1,0 +1,139 @@
+.notcontainer {
+    background-color: $color-pale;
+}
+.about {
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    gap:5.5rem;
+
+    background-color: $color-pale;
+    padding:3rem 0 3rem 0;
+
+    .aboutpart {
+        display: flex;
+        justify-content:flex-start;
+        align-items:center;
+        gap: 1rem;
+
+        .pics {
+            border-radius: 50%;
+            padding:.6rem;
+            background-color: $color-black;
+
+            width:3.5rem;
+        }
+        .description {
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:flex-start;
+            gap: 0.5rem;
+
+            .subtitle {
+                font-family: 'Cormorant Infant', serif;
+                font-size: 1.3rem;
+                letter-spacing: 0.2px;
+                color: $color-black;
+            }
+            .text {
+                font-size: 1rem;
+                
+                color: #555555;
+
+                .e-mail {
+                    text-decoration: none;
+                    color:#555555;
+                }
+            }
+        }
+    }
+    
+}
+.story {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap: 3rem;
+
+    padding:3rem 0 4rem 0;
+
+    &__left{
+        width:53%;
+
+    }
+    &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+        .title {
+            font-size: 2.5rem;
+            font-family: 'Cormorant Infant', serif;
+            color: $color-black;
+            padding:0 0 2rem 0;
+        }
+        .text {
+            color:#555555;
+            padding: 0 0 2rem 0;
+            font-size: 1.1rem;
+        }
+        .years {
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:2rem;
+
+            &__vert {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                
+            }
+        }
+        .signature{
+            height: 65%;
+            // padding: 2rem 0;
+        }
+
+    }
+
+}
+.testimonial{
+    background-color: $color-black;
+    padding: 5rem 0 5rem 7rem;
+    color: $color-white;
+
+    .chapter {
+        display:inline-block;
+        font-size: 0.8rem;
+        letter-spacing: 0;
+        padding:0.4rem 0 0.3rem 0;
+        border-top: 1px solid $color-sand;
+        border-bottom: 1px solid $color-sand;
+        
+    }
+    
+    .title {
+        font-size: 2.5rem;
+        font-family: 'Cormorant Infant', serif;
+        
+        padding:1rem 0;
+
+    }
+    .text {
+        
+        padding: 0 0 2rem 0;
+        font-size: 1.1rem;
+    }
+
+
+}
+.middlebanner {
+    width:100vw;
+    height:500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

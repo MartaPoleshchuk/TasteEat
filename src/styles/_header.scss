@@ -43,6 +43,9 @@
         .list {
             color: $color-white;
         }
+        .sandfont {
+            color: $color-sand;
+        }
         .social {
             height: 25px;
 
@@ -56,6 +59,7 @@
         align-items:center;
 
         .leftside{
+            
             display:flex;
             flex-direction: column;
             justify-content:center;
@@ -79,11 +83,60 @@
             }
         }
         .rightside{
+            width:50%;
 
-            .bannerimage {
-                height: 550px;
-                padding:0 1rem;
+            display:grid;
+            grid-template-columns: 27px 1fr 1fr 27px;
+            grid-template-rows: 27px 1fr;
+            .stripe {
+                grid-column-start: 2; 
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                background: rgba(255, 255, 255, 0.1);
             }
+            .columnleft {
+                grid-column-start: 1; 
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                background: rgba(255, 255, 255, 0.1);
+            }
+            .columnright {
+                grid-column-start: 4; 
+                grid-column-end: 5;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                background: rgba(255, 255, 255, 0.1);
+            }
+            
+            .bannerimage {
+                
+                grid-column-start: 2; 
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+
+                // height: 600px;
+                width:100%;
+                padding:0 1.5rem;
+
+                
+            }
+            
+            .bannerhinge {
+
+                grid-column-start: 3; 
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                width:350px;
+                margin-top: -15px;
+                margin-right: -70px;
+                
+            }
+        
+        
 
         }
 

@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 0.2px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -406,6 +406,96 @@ body {
 .testimonial .text {
   padding: 0 0 2rem 0;
   font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.testimonial .reviewcards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2.5rem;
+  margin: 2rem 0 3.5rem 0;
+}
+
+.testimonial .reviewcards .reviewcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #343942;
+  width: 30%;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.testimonial .reviewcards .reviewcard .reviewer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.testimonial .reviewcards .reviewcard .reviewer .cardphoto {
+  width: 40%;
+}
+
+.testimonial .reviewcards .reviewcard .reviewer .reviewrname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.testimonial .reviewcards .reviewcard .reviewer .name {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+
+.testimonial .reviewcards .reviewcard .reviewer .city {
+  color: #E1B168;
+  font-size: 0.9rem;
+}
+
+.testimonial .reviewcards .reviewcard .line {
+  border-bottom: 1px solid #FFFFFF;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.testimonial .reviewcards .reviewcard .cardtext {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 1.1rem;
+  letter-spacing: 0.25px;
 }
 
 .middlebanner {
@@ -414,5 +504,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.offer {
+  background-color: #E5E5E5;
 }
 /*# sourceMappingURL=styles.css.map */

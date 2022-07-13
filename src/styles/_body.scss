@@ -126,8 +126,74 @@
         
         padding: 0 0 2rem 0;
         font-size: 1.1rem;
+        font-weight: 300;
     }
+    .reviewcards {
+        display:flex;
+        justify-content:flex-start;
+        align-items:flex-start;
+        gap:2.5rem;
 
+        margin: 2rem 0 3.5rem 0;
+
+
+        .reviewcard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            
+
+            background-color: $color-grey;
+            width:30%;
+            height:100%;
+            padding: 0 2rem;
+
+            .reviewer {
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0.5rem;
+
+                .cardphoto {
+                    width: 40%;
+                }
+                .reviewrname {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    
+
+                    
+                    
+                }
+                .name {
+                    font-family: 'Cormorant Infant', serif;
+                    font-size: 1.4rem;
+                    padding-bottom: 0.5rem;
+                }
+                .city {
+                    color: $color-sand;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .line {
+                border-bottom: 1px solid $color-white;
+                width: 100%;
+                margin: 1.5rem 0;
+            }
+            .cardtext {
+                font-family: 'Cormorant Infant', serif;
+                font-weight:300;
+                line-height: 1.5em;
+                font-size: 1.1rem;
+                letter-spacing: 0.25px;
+            }
+        }
+
+
+    }
 
 }
 .middlebanner {
@@ -136,4 +202,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.offer {
+    background-color: $color-bcgWhite;
 }

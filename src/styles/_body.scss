@@ -105,7 +105,7 @@
     padding: 5rem 0 5rem 7rem;
     color: $color-white;
 
-    .chapter {
+    &__chapter {
         display:inline-block;
         font-size: 0.8rem;
         letter-spacing: 0;
@@ -115,14 +115,14 @@
         
     }
     
-    .title {
+    &__title {
         font-size: 2.5rem;
         font-family: 'Cormorant Infant', serif;
         
         padding:1rem 0;
 
     }
-    .text {
+    &__text {
         
         padding: 0 0 2rem 0;
         font-size: 1.1rem;
@@ -203,7 +203,67 @@
     background-size: cover;
     background-position: center;
 }
-
+.notoffer {
+    background-color:$color-bcgWhite ;
+}
 .offer {
+    max-width:680px;
+    margin:0 auto;
+    
     background-color: $color-bcgWhite;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    margin-top:7rem;
+    color: $color-black;
+
+    &__chapter {
+        display:inline-block;
+        font-size: 0.7rem;
+        letter-spacing: 0;
+        padding:0.4rem 0 0.3rem 0;
+        border-top: 1px solid $color-sand;
+        border-bottom: 1px solid $color-sand;
+
+    }
+    &__title {
+        font-size: 2rem;
+        font-family: 'Cormorant Infant', serif;
+
+    }
+    &__text {
+        text-align: center;
+        color:#555555;
+    }
+}
+.special {
+    display:flex;
+    justify-content: space-between;
+    gap:2rem;
+
+
+    &__offer {
+        width:50%;
+        background-image: url(../img/bluecardbcg.png);
+        display:flex;
+        justify-content: space-between;
+
+
+        padding: 2rem 1rem 1.5rem 1rem;
+        height: auto;
+
+        .leftside {
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .rightside {
+            text-align: center;
+            height: 150px;
+        }
+    }
+
+
 }

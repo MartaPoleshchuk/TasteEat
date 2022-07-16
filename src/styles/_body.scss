@@ -245,23 +245,56 @@
 
 
     &__offer {
-        width:50%;
+        width:45%;
         background-image: url(../img/bluecardbcg.png);
         display:flex;
         justify-content: space-between;
 
 
-        padding: 2rem 1rem 1.5rem 1rem;
+        padding: 3rem 2rem 2.5rem 2rem;
         height: auto;
 
         .leftside {
             display:flex;
             flex-direction: column;
             justify-content: flex-start;
+            width:40%;
+
+            color: $color-black;
+
+            .price_1{
+                font-size: 0.8rem;
+
+            }
+            .price_2 {
+                font-size: 2.5rem;
+                font-family: 'Cormorant Infant', serif;
+            }
+            .middletext{
+                display: inline-block;
+                border-top: 1px solid $color-black;
+                border-bottom: 1px solid $color-black;
+                padding: 0.4rem 0 0.3rem 0;
+                letter-spacing: 4.5px;
+                font-size: 0.7rem;
+
+            }
+            .dishname{
+                font-family: 'Cormorant Infant', serif;
+                font-size: 1.5rem;
+                letter-spacing: 0.2px;
+                padding: 0.5rem 0;
+
+            }
+            .dishdescr {
+
+                color:#555555;
+
+            }
         }
         .rightside {
             text-align: center;
-            height: 150px;
+            height: 160px;
         }
     }
 

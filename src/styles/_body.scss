@@ -102,7 +102,7 @@
 }
 .testimonial{
     background-color: $color-black;
-    padding: 5rem 0 5rem 7rem;
+    padding: 5rem 0;
     color: $color-white;
 
     &__chapter {
@@ -426,4 +426,62 @@
 
         }
     }
+
+    &__rightside {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        .pictos {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:0.6rem;
+
+            border: 15px solid #323841;
+            padding:2.5rem;
+
+            &__img{
+                width: 45px;
+                
+            }
+
+            &__title{
+                font-family: 'Cormorant Infant', serif;
+
+            }
+        }
+    }
+}
+
+.topfooter {
+    padding-top: 5rem;
+    background-color: $color-black;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__hashtag {
+        
+        color: $color-white;
+        width:15%;
+    }
+
+    &__logo {
+        height: 150px;
+        
+
+    }
+
+}
+.middlefooter {
+    
+}
+.bottomfooter {
+    background-color: $color-black;
+    border-top: 1px solid #575B62;
+    padding: 1rem 0;
 }

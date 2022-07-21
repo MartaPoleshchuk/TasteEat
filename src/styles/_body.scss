@@ -455,6 +455,47 @@
         }
     }
 }
+.reservation {
+    background-image: url(../img/bottombanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:877px;
+
+    &__background {
+        height:650px;
+        width:650px;
+        background: rgba(41, 46, 54, 0.95);
+        margin:0 auto;
+        color: $color-white;
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:3rem;
+
+        .chapter {
+            display:inline-block;
+            font-size: 0.7rem;
+            padding:0.4rem 0 0.3rem 0;
+            letter-spacing: 1.2px;
+            border-top: 1px solid $color-sand;
+            border-bottom: 1px solid $color-sand;
+            
+           
+        }
+        .title {
+            font-size: 1.8rem;
+            font-family: 'Cormorant Infant', serif;
+            padding-bottom: 1.5rem;
+        
+        }
+    }
+}
+
+
+
 
 .topfooter {
     padding-top: 5rem;
@@ -472,16 +513,97 @@
 
     &__logo {
         height: 150px;
-        
+        }
+
+    &__center {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:0.3rem;
+        color: $color-white;
 
     }
 
 }
 .middlefooter {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 0;
+
+    &__left {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap:0.4rem;
+        color: $color-white;
+
+        .chapter {
+            display:inline-block;
+            font-size: 0.8rem;
+            padding:0.4rem 0 0.3rem 0;
+            letter-spacing: 1px;
+            border-top: 1px solid $color-sand;
+            border-bottom: 1px solid $color-sand;
+            margin-bottom: 2.5rem;
+        }
+        .link {
+            text-decoration: none;
+            color: $color-sand;
+        }
+
+    }
+
+    &__center {
+
+        display: flex;
+        gap: 0;
+
+        .subscribe {
+            position: relative;
+            border: 1px solid #858585;
+            
+            width:20rem;
+            padding:1rem 0 1rem 1rem;
+            background-color: $color-black;
+
+            input::placeholder {
+                color: $color-white;
+            }
     
+        &:focus-visible{
+        outline: none;
+            }
+        }
+
+
+    }
+    &__right {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap:0.4rem;
+        color: $color-white;
+
+        .sand {
+            color: $color-sand;
+        }
+    }
+
 }
 .bottomfooter {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
     background-color: $color-black;
     border-top: 1px solid #575B62;
-    padding: 1rem 0;
+    padding: 1.5rem 1rem;
+    color: $color-white;
+    font-size: 0.8rem;
+    &__sand {
+        color: $color-sand;
+    }
 }

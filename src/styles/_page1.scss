@@ -1,0 +1,104 @@
+.chapter {
+    display:inline-block;
+    font-size: 0.7rem;
+    padding:0.4rem 0 0.3rem 0;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1.2px;
+    border-top: 1px solid $color-sand;
+    border-bottom: 1px solid $color-sand;
+}
+.menu {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:3rem;
+    width:100%;
+
+    
+
+    &__leftpart {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:1.5rem;
+        width:27%;
+
+        .title{
+            font-size: 1.8rem;
+            font-family: 'Cormorant Infant', serif;
+            color: $color-black;
+            
+        }
+        .text {
+            line-height: 1.5;
+            color:#555555;
+        }
+        .menuimage {
+            width:100%;
+        }
+
+    }
+    &__rightpart {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:1.5rem;
+        // width:auto;
+        height:auto;
+
+        .category {
+            font-size: 1.4rem;
+            font-family: 'Cormorant Infant', serif;
+        }
+        .dish{
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap:1rem;
+            width:100%;
+            
+        }
+        .dishdisplay {
+            display:flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            align-items: flex-start;
+            // width: fit-content;
+            // gap:1rem;
+
+        }
+        .dishdisplay1 {
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap:0.5rem;
+            // width: auto;
+            // width: 200%;
+        }
+        .dishimage{
+            width:80px;
+
+        }
+        .dishname {
+            font-family: 'Cormorant Infant', serif;
+            color: $color-black;
+            font-size: 1.3rem;
+        }
+        .dishdescription{
+            color:#555555;
+            width:auto;
+        }
+        .dishborder{
+            
+            border-bottom: 2px solid #AAAAAA;
+            // width:100%;
+        }
+        .dishprice{
+            font-family: 'Cormorant Infant', serif;
+            color: $color-black;
+            font-size: 1.3rem;
+        }
+
+    }
+}

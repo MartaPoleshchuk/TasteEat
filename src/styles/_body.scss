@@ -456,6 +456,7 @@
     }
 }
 .reservation {
+    position: relative;
     background-image: url(../img/bottombanner.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -463,10 +464,13 @@
     height:877px;
 
     &__background {
-        height:650px;
-        width:650px;
+        position: absolute;
+        height:600px;
+        width:600px;
         background: rgba(41, 46, 54, 0.95);
-        margin:0 auto;
+       
+        margin-top: 138px;
+        margin-left: 29%;
         color: $color-white;
 
         display:flex;
@@ -490,6 +494,43 @@
             font-family: 'Cormorant Infant', serif;
             padding-bottom: 1.5rem;
         
+        }
+        .inputs {
+
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+
+            &__1 {
+                position: relative;
+                border: 1px solid #858585;
+                
+                width:12rem;
+                margin: 1rem 0;
+                padding:1rem 0 1rem 1rem;
+                background-color: $color-black;
+    
+        
+                &:focus-visible{
+                outline: none;
+                }
+            }
+            &__2 {
+                position: relative;
+                border: 1px solid #858585;
+                
+                width:7.55rem;
+                margin: 1rem 0;
+                padding:1rem 0 1rem 1rem;
+                background-color: $color-black;
+    
+        
+                &:focus-visible{
+                outline: none;
+                }
+            }
+
         }
     }
 }

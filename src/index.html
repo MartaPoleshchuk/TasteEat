@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400&family=Josefin+Sans:wght@100;300;400&display=swap" rel="stylesheet">
-   
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header class="header">
@@ -23,9 +25,9 @@
         <div class="header__nav container">
         <nav>
             <ul class="lists">
-                <li class="list sandfont">Home</li>
+                <li class="list">Home</li>
                 <li class="list">About Us</li>
-                <li class="list">Our Menu</li>
+                <li class="list"><a class= "list" href='./pages/page1.html'>Our Menu</a></li>
                 <li class="list">Pages</li>
                 <li class="list">Blog</li>
                 <li class="list">Contact Us</li>
@@ -38,7 +40,7 @@
             <div class="leftside">
                 <div class="leftside__title">Welcome to <br>Restaurant</div>
                 <div class="leftside__content">The people, food and the prime locations make the perfect place <br><br> good friends & family to come together and have great time.</div>
-                <a class="btn">View Menu</a>
+                <a class="btn" href='./pages/page1.html'>View Menu</a>
             </div>
             <div class="rightside">
                 <div class="stripe"></div>
@@ -103,43 +105,96 @@
             <div class="testimonial__title">Our Clients Say</div>
             <div class="testimonial__text">We love to hear from customers, so please leave a comment or say hello in an email.</div>
         
-            <div class="reviewcards">
-                <div class="reviewcard">
-                    <div class="reviewer">
-                    <img class="cardphoto" src="./img/Natasha.png" alt="#">
-                    <div class="reviewername">
-                        <div class="name">Natasha D.</div>
-                        <div class="city">New York</div>
-                    </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="cardtext">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</div>
-                </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
 
-                <div class="reviewcard">
-                    <div class="reviewer">
-                    <img class="cardphoto" src="./img/Jack.png" alt="#">
-                    <div class="reviewername">
-                        <div class="name">Jack Sparrow</div>
-                        <div class="city">Salt Lake City</div>
-                    </div>
-                    </div>
-                    <div class="line"></div>
-                    <div class="cardtext">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</div>
-                </div>
+                        <div class="reviewcards">
+                            <div class="reviewcard">
+                                <div class="reviewer">
+                                    <img class="cardphoto" src="./img/Natasha.png" alt="#">
+                                    <div class="reviewername">
+                                    <div class="name">Natasha D.</div>
+                                    <div class="city">New York</div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="cardtext">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</div>
+                            </div>
 
-                <div class="reviewcard">
-                    <div class="reviewer">
-                    <img class="cardphoto" src="./img/Martin.png" alt="#">
-                    <div class="reviewername">
-                        <div class="name">Martin</div>
-                        <div class="city">San Diego</div>
+                            <div class="reviewcard">
+                                <div class="reviewer">
+                                <img class="cardphoto" src="./img/Jack.png" alt="#">
+                                <div class="reviewername">
+                                <div class="name">Jack Sparrow</div>
+                                <div class="city">Salt Lake City</div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                                <div class="cardtext">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</div>
+                            </div>
+
+                            <div class="reviewcard">
+                                <div class="reviewer">
+                                <img class="cardphoto" src="./img/Martin.png" alt="#">
+                                <div class="reviewername">
+                                    <div class="name">Martin</div>
+                                <div class="city">San Diego</div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="cardtext">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</div>
+                        </div>
+                        </div>
+                        
                     </div>
+                    <div class="swiper-slide">
+                        <div class="reviewcards">
+                            <div class="reviewcard">
+                                <div class="reviewer">
+                                    <img class="cardphoto" src="./img/Natasha.png" alt="#">
+                                    <div class="reviewername">
+                                    <div class="name">Natasha D.</div>
+                                    <div class="city">New York</div>
+                                    </div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="cardtext">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</div>
+                            </div>
+
+                            <div class="reviewcard">
+                                <div class="reviewer">
+                                <img class="cardphoto" src="./img/Jack.png" alt="#">
+                                <div class="reviewername">
+                                <div class="name">Jack Sparrow</div>
+                                <div class="city">Salt Lake City</div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                                <div class="cardtext">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</div>
+                            </div>
+
+                            <div class="reviewcard">
+                                <div class="reviewer">
+                                <img class="cardphoto" src="./img/Martin.png" alt="#">
+                                <div class="reviewername">
+                                    <div class="name">Martin</div>
+                                <div class="city">San Diego</div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="cardtext">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</div>
+                        </div>
+                        </div>
                     </div>
-                    <div class="line"></div>
-                    <div class="cardtext">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</div>
                 </div>
-            </div>
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+        </div>
+            
         </div>
         </div>
         <div class="notoffer">
@@ -253,7 +308,7 @@
 
         </div>
         <div class="borders ">
-        <a class="btn btn__clear container ">See all dishes</a>
+        <a class="btn btn__clear container " href='./pages/page1.html'>See all dishes</a>
         </div>
         </div>
         <div class="reservation">
@@ -324,6 +379,10 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/swiper.js"></script>
+   
+    
     
 </body>
 </html>

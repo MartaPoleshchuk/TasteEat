@@ -42,9 +42,14 @@
         }
         .list {
             color: $color-white;
-        }
-        .sandfont {
+
+            }
+
+
+        
+        :hover {
             color: $color-sand;
+            cursor: pointer;
         }
         .social {
             height: 25px;

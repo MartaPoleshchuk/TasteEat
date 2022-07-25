@@ -100,6 +100,16 @@
     }
 
 }
+.swiper {
+    width: 100%;
+    height: auto;
+    --swiper-theme-color: #FFFFFF;
+    }
+
+.swiper.wrapper{
+    max-width: 1480px;
+}
+
 .testimonial{
     background-color: $color-black;
     padding: 5rem 0;

@@ -1,13 +1,12 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   letter-spacing: 0.2px;
   overflow-x: hidden;
 }
@@ -17,30 +16,29 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   border: 1px solid #E1B168;
   color: #E1B168;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.2rem;
   padding: 1.3rem 3rem;
   text-decoration: none;
 }
-
 .btn__clear {
   font-size: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   width: 215px;
 }
 
 .btn__call {
   border: 1px solid #E1B168;
   color: #FFFFFF;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -54,7 +52,7 @@ body {
   border: 1px solid #E1B168;
   color: #292E36;
   background-color: #E1B168;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 0.44px;
@@ -77,50 +75,27 @@ body {
   top: 0;
   background-color: #292E36;
 }
-
 .header__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header__top .logo {
   margin: 2.9rem 0;
   height: 160px;
 }
-
 .header__line {
   border-bottom: 1px solid #5C6168;
 }
-
 .header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header__nav .lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 4.3rem;
   list-style-type: none;
   margin: 1.6rem 0;
@@ -128,119 +103,79 @@ body {
   font-size: 1.05rem;
   letter-spacing: 0.3px;
 }
-
 .header__nav .list {
   color: #FFFFFF;
 }
-
-.header__nav .sandfont {
+.header__nav :hover {
   color: #E1B168;
+  cursor: pointer;
 }
-
 .header__nav .social {
   height: 25px;
 }
-
 .header__banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header__banner .leftside {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 3.5rem;
   margin-left: 7%;
 }
-
 .header__banner .leftside__title {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-size: 5rem;
   color: #FFFFFF;
   letter-spacing: 0.2px;
 }
-
 .header__banner .leftside__content {
   font-size: 1.2rem;
   color: #FFFFFF;
   letter-spacing: 0.2px;
 }
-
 .header__banner .rightside {
   width: 50%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 27px 1fr 1fr 27px;
-      grid-template-columns: 27px 1fr 1fr 27px;
-  -ms-grid-rows: 27px 1fr;
-      grid-template-rows: 27px 1fr;
+  grid-template-columns: 27px 1fr 1fr 27px;
+  grid-template-rows: 27px 1fr;
 }
-
 .header__banner .rightside .stripe {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column-start: 2;
   grid-column-end: 4;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
   grid-row-end: 2;
   background: rgba(255, 255, 255, 0.1);
 }
-
 .header__banner .rightside .columnleft {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
   grid-column-end: 2;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
   grid-row-end: 3;
   background: rgba(255, 255, 255, 0.1);
 }
-
 .header__banner .rightside .columnright {
-  -ms-grid-column: 4;
-      grid-column-start: 4;
+  grid-column-start: 4;
   grid-column-end: 5;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
   grid-row-end: 3;
   background: rgba(255, 255, 255, 0.1);
 }
-
 .header__banner .rightside .bannerimage {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column-start: 2;
   grid-column-end: 4;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
   padding: 0 1.5rem;
 }
-
 .header__banner .rightside .bannerhinge {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column-start: 3;
   grid-column-end: 4;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
   grid-row-end: 3;
   width: 350px;
   margin-top: -15px;
@@ -252,152 +187,98 @@ body {
 }
 
 .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 5.5rem;
   background-color: #FFF8F5;
   padding: 3rem 0 3rem 0;
 }
-
 .about .aboutpart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
 }
-
 .about .aboutpart .pics {
   border-radius: 50%;
-  padding: .6rem;
+  padding: 0.6rem;
   background-color: #292E36;
   width: 3.5rem;
 }
-
 .about .aboutpart .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 0.5rem;
 }
-
 .about .aboutpart .description .subtitle {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-size: 1.3rem;
   letter-spacing: 0.2px;
   color: #292E36;
 }
-
 .about .aboutpart .description .text {
   font-size: 1rem;
   color: #555555;
 }
-
 .about .aboutpart .description .text .e-mail {
   text-decoration: none;
   color: #555555;
 }
 
 .story {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 3rem;
   padding: 3rem 0 4rem 0;
 }
-
 .story__left {
   width: 53%;
 }
-
 .story__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
 .story__right .title {
   font-size: 2.5rem;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   color: #292E36;
   padding: 0 0 2rem 0;
 }
-
 .story__right .text {
   color: #555555;
   padding: 0 0 2rem 0;
   font-size: 1.1rem;
 }
-
 .story__right .years {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
-
 .story__right .years__vert {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
 .story__right .signature {
   height: 65%;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  --swiper-theme-color: #FFFFFF;
+}
+
+.swiper.wrapper {
+  max-width: 1480px;
 }
 
 .testimonial {
@@ -405,7 +286,6 @@ body {
   padding: 5rem 0;
   color: #FFFFFF;
 }
-
 .testimonial__chapter {
   display: inline-block;
   font-size: 0.8rem;
@@ -414,102 +294,63 @@ body {
   border-top: 1px solid #E1B168;
   border-bottom: 1px solid #E1B168;
 }
-
 .testimonial__title {
   font-size: 2.5rem;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   padding: 1rem 0;
 }
-
 .testimonial__text {
   padding: 0 0 2rem 0;
   font-size: 1.1rem;
   font-weight: 300;
 }
-
 .testimonial .reviewcards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 2.5rem;
   margin: 2rem 0 3.5rem 0;
 }
-
 .testimonial .reviewcards .reviewcard {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   background-color: #343942;
   width: 30%;
   height: 100%;
   padding: 0 2rem;
 }
-
 .testimonial .reviewcards .reviewcard .reviewer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 0.5rem;
 }
-
 .testimonial .reviewcards .reviewcard .reviewer .cardphoto {
   width: 40%;
 }
-
 .testimonial .reviewcards .reviewcard .reviewer .reviewrname {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
 .testimonial .reviewcards .reviewcard .reviewer .name {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-size: 1.4rem;
   padding-bottom: 0.5rem;
 }
-
 .testimonial .reviewcards .reviewcard .reviewer .city {
   color: #E1B168;
   font-size: 0.9rem;
 }
-
 .testimonial .reviewcards .reviewcard .line {
   border-bottom: 1px solid #FFFFFF;
   width: 100%;
   margin: 1.5rem 0;
 }
-
 .testimonial .reviewcards .reviewcard .cardtext {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-weight: 300;
   line-height: 1.5em;
   font-size: 1.1rem;
@@ -532,24 +373,14 @@ body {
   max-width: 680px;
   margin: 0 auto;
   background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin-top: 7rem;
   color: #292E36;
 }
-
 .offer__chapter {
   display: inline-block;
   font-size: 0.7rem;
@@ -558,12 +389,10 @@ body {
   border-top: 1px solid #E1B168;
   border-bottom: 1px solid #E1B168;
 }
-
 .offer__title {
   font-size: 2rem;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
 }
-
 .offer__text {
   text-align: center;
   color: #555555;
@@ -571,42 +400,25 @@ body {
 }
 
 .special {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 3rem;
 }
-
 .special__offer {
   width: 50%;
   background-image: url(../img/bluecardbcg.png);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 3rem 2rem 2.5rem 2rem;
   height: auto;
 }
-
 .special__offer__right {
   background-image: url(../img/greycardbcg.png);
 }
-
 .special__offer .leftside {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 40%;
   color: #292E36;
   background-image: url(../img/forprice_white.png);
@@ -614,31 +426,25 @@ body {
   background-position: left 0%;
   background-size: 50%;
 }
-
 .special__offer .leftside__right {
   background-image: url(../img/forprice_grey.png);
 }
-
 .special__offer .leftside .price_1 {
   padding-left: 2rem;
   font-size: 0.7rem;
 }
-
 .special__offer .leftside .price_1__right {
   color: #FFFFFF;
 }
-
 .special__offer .leftside .price_2 {
   font-size: 2.5rem;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   padding-bottom: 2rem;
   padding-left: 1.35rem;
 }
-
 .special__offer .leftside .price_2__right {
   color: #FFFFFF;
 }
-
 .special__offer .leftside .middletext {
   display: inline-block;
   border-top: 1px solid #292E36;
@@ -648,85 +454,55 @@ body {
   font-size: 0.7rem;
   width: 85%;
 }
-
 .special__offer .leftside .dishname {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-size: 1.5rem;
   letter-spacing: 0.2px;
   padding: 0.5rem 0;
 }
-
 .special__offer .leftside .dishdescr {
   color: #555555;
 }
-
 .special__offer .rightside {
   text-align: center;
   height: 180px;
 }
-
 .special__offer .rightside__right {
   height: 230px;
 }
 
 .dishes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
 }
-
 .dishes .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 23%;
 }
-
 .dishes .card__img {
   width: 100%;
 }
-
 .dishes .card__title {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-weight: 400;
   font-size: 1.3rem;
   color: #292E36;
   padding: 0.8rem 0;
 }
-
 .dishes .card__line {
   border-bottom: 1px solid #DCDCDC;
   width: 100%;
 }
-
 .dishes .card__description {
   padding: 0.8rem 0;
   line-height: 1.5;
@@ -746,33 +522,18 @@ body {
   color: #FFFFFF;
   padding: 6rem 0;
   margin: 5rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 3rem;
 }
-
 .services__leftside {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 1rem;
 }
-
 .services__leftside .chapter {
   text-transform: uppercase;
   display: inline-block;
@@ -781,54 +542,33 @@ body {
   border-top: 1px solid #E1B168;
   border-bottom: 1px solid #E1B168;
 }
-
 .services__leftside .title {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   font-size: 1.8rem;
 }
-
 .services__leftside .text {
   line-height: 1.5;
 }
-
 .services__rightside {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 2rem;
 }
-
 .services__rightside .pictos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0.6rem;
   border: 15px solid #323841;
   padding: 2.5rem;
 }
-
 .services__rightside .pictos__img {
   width: 45px;
 }
-
 .services__rightside .pictos__title {
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
 }
 
 .reservation {
@@ -839,7 +579,6 @@ body {
   background-position: center;
   height: 877px;
 }
-
 .reservation__background {
   position: absolute;
   height: 600px;
@@ -848,22 +587,12 @@ body {
   margin-top: 138px;
   margin-left: 29%;
   color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 3rem;
 }
-
 .reservation__background .chapter {
   display: inline-block;
   font-size: 0.7rem;
@@ -872,26 +601,17 @@ body {
   border-top: 1px solid #E1B168;
   border-bottom: 1px solid #E1B168;
 }
-
 .reservation__background .title {
   font-size: 1.8rem;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   padding-bottom: 1.5rem;
 }
-
 .reservation__background .inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 1.5rem;
 }
-
 .reservation__background .inputs__1 {
   position: relative;
   border: 1px solid #858585;
@@ -900,11 +620,9 @@ body {
   padding: 1rem 0 1rem 1rem;
   background-color: #292E36;
 }
-
 .reservation__background .inputs__1:focus-visible {
   outline: none;
 }
-
 .reservation__background .inputs__2 {
   position: relative;
   border: 1px solid #858585;
@@ -913,7 +631,6 @@ body {
   padding: 1rem 0 1rem 1rem;
   background-color: #292E36;
 }
-
 .reservation__background .inputs__2:focus-visible {
   outline: none;
 }
@@ -921,72 +638,39 @@ body {
 .topfooter {
   padding-top: 5rem;
   background-color: #292E36;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .topfooter__hashtag {
   color: #FFFFFF;
   width: 15%;
 }
-
 .topfooter__logo {
   height: 150px;
 }
-
 .topfooter__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 0.3rem;
   color: #FFFFFF;
 }
 
 .middlefooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 0;
 }
-
 .middlefooter__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   gap: 0.4rem;
   color: #FFFFFF;
 }
-
 .middlefooter__left .chapter {
   display: inline-block;
   font-size: 0.8rem;
@@ -996,19 +680,14 @@ body {
   border-bottom: 1px solid #E1B168;
   margin-bottom: 2.5rem;
 }
-
 .middlefooter__left .link {
   text-decoration: none;
   color: #E1B168;
 }
-
 .middlefooter__center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0;
 }
-
 .middlefooter__center .subscribe {
   position: relative;
   border: 1px solid #858585;
@@ -1016,66 +695,40 @@ body {
   padding: 1rem 0 1rem 1rem;
   background-color: #292E36;
 }
-
-.middlefooter__center .subscribe input::-webkit-input-placeholder {
+.middlefooter__center .subscribe input::-moz-placeholder {
   color: #FFFFFF;
 }
-
 .middlefooter__center .subscribe input:-ms-input-placeholder {
   color: #FFFFFF;
 }
-
-.middlefooter__center .subscribe input::-ms-input-placeholder {
-  color: #FFFFFF;
-}
-
 .middlefooter__center .subscribe input::placeholder {
   color: #FFFFFF;
 }
-
 .middlefooter__center .subscribe:focus-visible {
   outline: none;
 }
-
 .middlefooter__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   gap: 0.4rem;
   color: #FFFFFF;
 }
-
 .middlefooter__right .sand {
   color: #E1B168;
 }
 
 .bottomfooter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   background-color: #292E36;
   border-top: 1px solid #575B62;
   padding: 1.5rem 1rem;
   color: #FFFFFF;
   font-size: 0.8rem;
 }
-
 .bottomfooter__sand {
   color: #E1B168;
 }
@@ -1092,131 +745,86 @@ body {
 }
 
 .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 3rem;
-  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5rem;
 }
-
 .menu__leftpart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1.5rem;
-  width: 27%;
+  width: 30%;
 }
-
 .menu__leftpart .title {
   font-size: 1.8rem;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
   color: #292E36;
 }
-
 .menu__leftpart .text {
   line-height: 1.5;
   color: #555555;
 }
-
 .menu__leftpart .menuimage {
   width: 100%;
 }
-
 .menu__rightpart {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1.5rem;
+  width: auto;
   height: auto;
 }
-
 .menu__rightpart .category {
   font-size: 1.4rem;
-  font-family: 'Cormorant Infant', serif;
+  font-family: "Cormorant Infant", serif;
 }
-
 .menu__rightpart .dish {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   gap: 1rem;
   width: 100%;
 }
-
 .menu__rightpart .dishdisplay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
 .menu__rightpart .dishdisplay1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  gap: 0.5rem;
-}
-
-.menu__rightpart .dishimage {
-  width: 80px;
-}
-
-.menu__rightpart .dishname {
-  font-family: 'Cormorant Infant', serif;
-  color: #292E36;
-  font-size: 1.3rem;
-}
-
-.menu__rightpart .dishdescription {
-  color: #555555;
-  width: auto;
-}
-
-.menu__rightpart .dishborder {
   border-bottom: 2px solid #AAAAAA;
+  position: relative;
+  float: left;
+  width: 100%;
 }
-
-.menu__rightpart .dishprice {
-  font-family: 'Cormorant Infant', serif;
+.menu__rightpart .dishimage {
+  width: 65px;
+}
+.menu__rightpart .dishname {
+  font-family: "Cormorant Infant", serif;
   color: #292E36;
   font-size: 1.3rem;
 }
-/*# sourceMappingURL=styles.css.map */
+.menu__rightpart .dishdescription {
+  padding-right: 36em;
+  margin-top: -1.2rem;
+  color: #555555;
+}
+.menu__rightpart .dishdescription span {
+  position: relative;
+  top: 1.9em;
+  padding-right: 5px;
+  background-color: #FFFFFF;
+}
+.menu__rightpart .dishprice {
+  font-family: "Cormorant Infant", serif;
+  color: #292E36;
+  font-size: 1.3rem;
+  padding: 1px 0 1px 5px;
+  position: relative;
+  top: 0.4em;
+  float: right;
+  background-color: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */

@@ -19,19 +19,25 @@
         <div class="header__top container">
             <a class="btn__call" href="tel:+37529123456789">Call - 123 456 789</a>
             <img class="logo" src="./img/logo.svg">
-            <a class="btn__bcgSand" href="#">Reservation</a>
+            <a class="btn__bcgSand" href="#reservation">Reservation</a>
         </div>
         <div class="header__line"></div>
         <div class="header__nav container">
         <nav>
             <ul class="lists">
                 <li class="list">Home</li>
-                <li class="list">About Us</li>
+                <li class="list"><a class="list" href="#story">About Us</a></li>
                 <li class="list"><a class= "list" href='./pages/page1.html'>Our Menu</a></li>
-                <li class="list">Pages</li>
-                <li class="list">Blog</li>
-                <li class="list">Contact Us</li>
+                <li class="list"><a class="list" href="#offer">Offer</a></li>
+                <li class="list"><a class="list nodisplay" href="#review">Reviews</a></li>
+                <li class="list"><a class="list" href="tel:+37529123456789">Contact Us</a></li>
             </ul>
+
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
         </nav>
         <img class="social" src="./img/socialnetworks.svg">
 
@@ -40,6 +46,7 @@
             <div class="leftside">
                 <div class="leftside__title">Welcome to <br>Restaurant</div>
                 <div class="leftside__content">The people, food and the prime locations make the perfect place <br><br> good friends & family to come together and have great time.</div>
+                
                 <a class="btn" href='./pages/page1.html'>View Menu</a>
             </div>
             <div class="rightside">
@@ -54,6 +61,7 @@
     </header>
     <main>
         <div class="notcontainer">
+            <a name="story"></a>
         <div class="about container">
             <div class="aboutpart">
                 <img class="pics" src="./img/LocateUs.svg">
@@ -79,6 +87,7 @@
             </div>
         </div>
         <div class="story container">
+            
             <img class="story__left" src="./img/story.png" alt="#">
             <div class="story__right">
                 <div class="title"> The Delicious Story</div>
@@ -99,7 +108,8 @@
 
         </div>
         </div>
-        <div class="notcontainerservices">
+        <div class="notcontainertestimonial">
+            <a name="review"></a>
         <div class="testimonial container">
             <div class="testimonial__chapter">TESTIMONIAL</div>
             <div class="testimonial__title">Our Clients Say</div>
@@ -110,7 +120,7 @@
                     <div class="swiper-slide">
 
                         <div class="reviewcards">
-                            <div class="reviewcard">
+                            <!-- <div class="reviewcard">
                                 <div class="reviewer">
                                     <img class="cardphoto" src="./img/Natasha.png" alt="#">
                                     <div class="reviewername">
@@ -120,13 +130,25 @@
                                 </div>
                                 <div class="line"></div>
                                 <div class="cardtext">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</div>
+                            </div> -->
+
+                            <div class="reviewcard">
+                                <div class="reviewer">
+                                <img class="cardphoto" src="./img/Natasha.png" alt="#">
+                                <div class="reviewername">
+                                <div class="name">Natasha</div>
+                                <div class="city">New York</div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
+                                <div class="cardtext">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</div>
                             </div>
 
                             <div class="reviewcard">
                                 <div class="reviewer">
                                 <img class="cardphoto" src="./img/Jack.png" alt="#">
                                 <div class="reviewername">
-                                <div class="name">Jack Sparrow</div>
+                                <div class="name">Jack</div>
                                 <div class="city">Salt Lake City</div>
                                 </div>
                             </div>
@@ -138,55 +160,20 @@
                                 <div class="reviewer">
                                 <img class="cardphoto" src="./img/Martin.png" alt="#">
                                 <div class="reviewername">
-                                    <div class="name">Martin</div>
+                                <div class="name">Martin</div>
                                 <div class="city">San Diego</div>
                                 </div>
                             </div>
                             <div class="line"></div>
-                            <div class="cardtext">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</div>
-                        </div>
+                                <div class="cardtext">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</div>
+                            </div>
+
+
+                            
                         </div>
                         
                     </div>
-                    <div class="swiper-slide">
-                        <div class="reviewcards">
-                            <div class="reviewcard">
-                                <div class="reviewer">
-                                    <img class="cardphoto" src="./img/Natasha.png" alt="#">
-                                    <div class="reviewername">
-                                    <div class="name">Natasha D.</div>
-                                    <div class="city">New York</div>
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="cardtext">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</div>
-                            </div>
-
-                            <div class="reviewcard">
-                                <div class="reviewer">
-                                <img class="cardphoto" src="./img/Jack.png" alt="#">
-                                <div class="reviewername">
-                                <div class="name">Jack Sparrow</div>
-                                <div class="city">Salt Lake City</div>
-                                </div>
-                            </div>
-                            <div class="line"></div>
-                                <div class="cardtext">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</div>
-                            </div>
-
-                            <div class="reviewcard">
-                                <div class="reviewer">
-                                <img class="cardphoto" src="./img/Martin.png" alt="#">
-                                <div class="reviewername">
-                                    <div class="name">Martin</div>
-                                <div class="city">San Diego</div>
-                                </div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="cardtext">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</div>
-                        </div>
-                        </div>
-                    </div>
+                   
                 </div>
             <div class="swiper-pagination"></div>
     
@@ -201,6 +188,7 @@
         <img class="middlebanner" src="./img/middle_banner.png" alt="#">
         
         <div class="offer">
+            <a name="offer"></a>
             <div class="offer__chapter">OFFERS</div>
             <div class="offer__title">Our Offer dishes</div>
             <div class="offer__text">Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now
@@ -291,6 +279,7 @@
                     <div>Fresh Salmon</div>
                     <div>$5</div>
 
+
                 </div>
                 <div class="card__line"></div>
                 <div class="card__description">Beat the health blues with our Super Immune Blue Juice Recipe.</div>
@@ -311,8 +300,11 @@
         <a class="btn btn__clear container " href='./pages/page1.html'>See all dishes</a>
         </div>
         </div>
+        
         <div class="reservation">
+            <a name="reservation"></a>
             <div class="reservation__background">
+                
                 <div class="chapter">RESERVATION</div>
                 <div class="title">Book Your Table</div>
                 <div class="inputs">
@@ -325,7 +317,7 @@
                     <input class="inputs__2" type="text" placeholder="Date">
                 </div>
 
-                <a class="btn__subscribe" href="#">Book A Table</a>
+                <a class="btn__reserv" href="#">Book A Table</a>
 
             </div>
 
@@ -381,6 +373,7 @@
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="module" src="./js/swiper.js"></script>
+    <script src="../src/js/burger.js"></script>
    
     
     

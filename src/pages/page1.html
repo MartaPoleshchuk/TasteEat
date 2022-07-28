@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400&family=Josefin+Sans:wght@100;300;400&display=swap" rel="stylesheet">
    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 </head>
 <body>
     <header class="header">
@@ -23,12 +25,17 @@
         <nav>
             <ul class="lists">
                 <li class="list sandfont"><a class="list" href='../index.html'>Home</a></li>
-                <li class="list">About Us</li>
+                <li class="list"><a class="list" href="../index.html#story">About Us</a></li>
                 <li class="list">Our Menu</li>
-                <li class="list">Pages</li>
-                <li class="list">Blog</li>
-                <li class="list">Contact Us</li>
+                <li class="list"><a class="list" href="../index.html#offer">Offer</a></li>
+                <li class="list"><a class="list nodisplay" href="../index.html#review">Reviews</a></li>
+                <li class="list"><a class="list" href="tel:+37529123456789">Contact Us</a></li>
             </ul>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
         </nav>
         <img class="social" src="../img/socialnetworks.svg">
 
@@ -188,6 +195,7 @@
         
 
     </footer>
+    <script src="../js/burger.js"></script>
     
 </body>
 </html>

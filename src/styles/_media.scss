@@ -8,6 +8,7 @@
     .burger {
         margin-top:1rem;
         display: block;
+        position: relative;
         
       }
         
@@ -16,13 +17,16 @@
       }
     
       .burger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        position:fixed;
+        transform: translateY(4px) rotate(45deg);
         background-color: $color-black;
+        
         
       }
     
       .burger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        position:fixed;
+        transform: translateY(-4px) rotate(-45deg);
         background-color:$color-black;
         
       }
@@ -30,13 +34,15 @@
       .lists {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 0;
         gap: 0;
     
         flex-direction: column;
-        width: 100%;
+        align-items:flex-end;
+        padding-right: 2rem;
+        width: 60%;
     
-        text-align: center;
+        text-align:center;
         background-color: #FFFFFF;
         color: #000000;
     
